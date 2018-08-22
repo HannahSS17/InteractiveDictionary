@@ -13,7 +13,7 @@ def translate(w):
     elif w.capitalize() in data:
         print(" ".join(data[w.title()]))
     elif w.upper() in data:
-        print(" ".join(data[w.up]))
+        print(" ".join(data[w.upper()]))
     elif len(get_close_matches(w, data.keys())) > 0:
             yn = input("Did you mean {}? Enter Y if Yes, N if No. ".format(get_close_matches(w, data.keys())[0]))
             if yn == "Y":
